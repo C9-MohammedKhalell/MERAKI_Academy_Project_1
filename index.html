@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <title>Memory Card Game</title>
+ 
+    </label>
+
+    <header>
+      <h1>Memory Card Game</h1>
+    </header>
+    <div id="main1">
+      <div class="talk-bubble">
+        <div class="talktext">
+          <p>
+            Hello, this is a memory card game to test and challenge your memory,
+            you can choose from many categories, if you get two matching cards
+            right you will get ten points and if you get them wrong you will
+            lose two points to win the game, you have to find all the matching
+            cards and score more than 50 points.
+          </p>
+        </div>
+      </div>
+
+      <button id="start" class="button" onclick="start()">Start</button>
+    </div>
+    <div id="main2" class="main" style="display: none">
+      <section class="main">
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+        <div class="box play"></div>
+
+        <div id="state">
+          <span id="time">0</span>
+          <span id="score">0</span>
+        </div>
+      </section>
+
+      <section id="pre" class="">
+        <div id="themes">
+          <h2>Choose your theme !</h2>
+          <p id="pokemon" class="themes" title="Pokemon">Pokemon</p>
+          <p id="Animals" class="themes" title="Animals">Animals</p>
+          
+          <p id="disney" class="themes" title="Disney">Disney</p>
+          <p id="pixar" class="themes" title="Pixar">Pixar</p>
+         
+          
+        </div>
+      </section>
+
+      <button id="Again" class="button" onclick="back()">Go Back</button>
+      <section id="post" class="hidden">
+        <div>
+          <p id="final"></p>
+          <br />
+          <p>
+            <a id="again">Play Again !</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
